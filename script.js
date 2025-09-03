@@ -24,8 +24,8 @@ function showNextTestimonial() {
     testimonials[currentTestimonial].style.opacity = '1';
 }
 
-// Change testimonial every 5 seconds
-setInterval(showNextTestimonial, 5000);
+// Change testimonial every 2 seconds
+setInterval(showNextTestimonial, 2000);
 
 // Get the audio element
 const bgAudio = document.getElementById('bgAudio');
