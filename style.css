@@ -136,6 +136,25 @@ html, body {
     animation: reverse 0.9s ease;
 }
 
+.logo-2 {
+    width: 25px;
+    height: 25px;
+    margin-top: 45px;
+    padding-left: 0px;
+    /* border: 1px solid red; */
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgba(255, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+    /* margin-left: 30px;
+    justify-self: left; */
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.logo-2:hover {
+    transform: scale(1.25);
+    animation: reverse 0.9s ease;
+}
 .linkedin {
     margin-top: -27px;
     width: 22px;
@@ -378,6 +397,11 @@ html, body {
     transform: scale(1.1);
 }
 
+.card-text {
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
 /* Submissions Review Panel */
 #submissions-review {
     position: fixed;
