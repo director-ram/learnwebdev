@@ -496,11 +496,12 @@ html, body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: 2px;
 }
 
 .social-icon {
-    padding: 30px;
-    border: 1px solid red;
+    padding: 40px;
+    border: 2px solid red;
     background: rgba(0, 0, 0, 0.8);
     margin: 20px auto;
     border-radius: 8px;
@@ -556,12 +557,14 @@ html, body {
 }
 .card-body {
     text-align: center;
-    padding: 5px;
+    padding: 2px;
+    margin-top: 2px;
 }
 
 .card {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 1px auto;
+    margin-top: 1px;
     padding: 30px;
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid red;
@@ -571,7 +574,7 @@ html, body {
 }
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(255, 22, 22, 0.846);
     background-color: rgba(20, 20, 20, 0.9);
 }
 .btn-2 {
