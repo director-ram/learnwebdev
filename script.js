@@ -14,18 +14,58 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Dynamic testimonial slider
-const testimonials = document.querySelectorAll('.service-card');
-let currentTestimonial = 0;
+// Separate animations for Skills and Education sections
 
-function showNextTestimonial() {
-    testimonials.forEach(card => card.style.opacity = '0');
-    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-    testimonials[currentTestimonial].style.opacity = '1';
+// Skills section animation
+const skillsCards = document.querySelectorAll('.services-sub-cont-1 .service-card');
+let currentSkillCard = 0;
+
+function showNextSkillCard() {
+    if (skillsCards.length > 0) {
+        skillsCards.forEach(card => card.style.opacity = '0');
+        currentSkillCard = (currentSkillCard + 1) % skillsCards.length;
+        skillsCards[currentSkillCard].style.opacity = '1';
+    }
 }
 
-// Change testimonial every 2 seconds
-setInterval(showNextTestimonial, 2000);
+// Education section animation
+const educationCards = document.querySelectorAll('.services-sub-cont .service-card');
+let currentEducationCard = 0;
+
+function showNextEducationCard() {
+    if (educationCards.length > 0) {
+        educationCards.forEach(card => card.style.opacity = '0');
+        currentEducationCard = (currentEducationCard + 1) % educationCards.length;
+        educationCards[currentEducationCard].style.opacity = '1';
+    }
+}
+
+// Initialize animations - start with first card visible in each section
+function initializeAnimations() {
+    // Skills section
+    if (skillsCards.length > 0) {
+        skillsCards.forEach((card, index) => {
+            card.style.opacity = index === 0 ? '1' : '0';
+        });
+    }
+    
+    // Education section
+    if (educationCards.length > 0) {
+        educationCards.forEach((card, index) => {
+            card.style.opacity = index === 0 ? '1' : '0';
+        });
+    }
+}
+
+// Start separate animations only if elements exist
+if (skillsCards.length > 0) {
+    initializeAnimations();
+    setInterval(showNextSkillCard, 2000);
+}
+
+if (educationCards.length > 0) {
+    setInterval(showNextEducationCard, 2000);
+}
 
 // Get the audio element
 const bgAudio = document.getElementById('bgAudio');
