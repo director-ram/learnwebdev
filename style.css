@@ -629,35 +629,236 @@ html, body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        padding-top: 120px; /* More space for wrapped navbar */
+    }
+    
+    .navbar {
+        flex-direction: column;
+        padding: 10px 5px;
+        align-items: center;
+    }
+    
+    .navbar-left {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navbar-right {
+        flex-wrap: wrap;
+        gap: 5px;
+        padding-right: 10px;
+        justify-content: center;
+    }
+    
+    .h2-title {
+        font-size: small;
+    }
+    
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .a-element {
+        padding: 8px 12px;
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    .form-control {
+        width: 120px;
+        font-size: 12px;
+    }
+    
+    .btn-1 {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
     .home {
         flex-direction: column;
         padding: 10px;
+        min-height: auto;
     }
     
     .left, .right {
         margin-right: 0;
         margin-bottom: 20px;
         max-width: 100%;
-    }
-    
-    /* .navbar {
-        flex-wrap: wrap;
-        padding: 5px;
-    }
-    
-    .navbar-right {
-        flex-wrap: wrap;
-        gap: 5px;
-    } */
-    
-    .blog-cards {
-        flex-direction: column;
+        padding: 10px;
     }
     
     .profile-image {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
         height: auto;
+    }
+    
+    .linkedin {
+        margin-left: 100px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .right-h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .right p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    
+    .blog-section {
+        padding: 10px;
+    }
+    
+    .blog-title {
+        font-size: 20px;
+    }
+    
+    .blog-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .blog-card {
+        min-width: 100%;
+        padding: 15px;
+    }
+    
+    .blog-card-title {
+        font-size: 18px;
+    }
+    
+    .blog-card-desc {
+        font-size: 14px;
+    }
+    
+    .services {
+        padding: 10px;
+    }
+    
+    .ser-h1 {
+        font-size: 24px;
+    }
+    
+    .services-sub-cont, .services-sub-cont-1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .service-card {
+        min-width: 100%;
+        padding: 15px;
+    }
+    
+    .sc-h1 {
+        font-size: 18px;
+    }
+    
+    .sc-p {
+        font-size: 14px;
+    }
+    
+    .testimonial-img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contact {
+        padding: 10px;
+    }
+    
+    .contact-info {
+        padding: 15px;
+    }
+    
+    .contact-info h2 {
+        font-size: 20px;
+    }
+    
+    .contact-info p {
+        font-size: 14px;
+    }
+    
+    .social-icon-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .card-text {
+        font-size: 14px;
+    }
+    
+    .btn-2 {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    
+    .audio-controls {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .hr {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Extra small devices (phones in portrait mode) */
+@media (max-width: 480px) {
+    body {
+        padding-top: 140px;
+    }
+    
+    .navbar-right {
+        width: 100%;
+    }
+    
+    .d-flex {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .form-control {
+        width: 100px;
+    }
+    
+    .profile-image {
+        max-width: 200px;
+    }
+    
+    .linkedin {
+        margin-left: 70px;
+    }
+    
+    .a-element {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .blog-card-link {
+        padding: 6px 12px;
+        font-size: 12px;
     }
 }
 
