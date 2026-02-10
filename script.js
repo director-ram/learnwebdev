@@ -2,7 +2,7 @@
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -48,7 +48,7 @@ function initializeAnimations() {
             card.style.opacity = index === 0 ? '1' : '0';
         });
     }
-    
+
     // Education section
     if (educationCards.length > 0) {
         educationCards.forEach((card, index) => {
@@ -58,14 +58,14 @@ function initializeAnimations() {
 }
 
 // Start separate animations only if elements exist
-if (skillsCards.length > 0) {
-    initializeAnimations();
-    setInterval(showNextSkillCard, 2000);
-}
+// if (skillsCards.length > 0) {
+//     initializeAnimations();
+//     setInterval(showNextSkillCard, 2000);
+// }
 
-if (educationCards.length > 0) {
-    setInterval(showNextEducationCard, 2000);
-}
+// if (educationCards.length > 0) {
+//     setInterval(showNextEducationCard, 2000);
+// }
 
 // Get the audio element
 const bgAudio = document.getElementById('bgAudio');
@@ -76,9 +76,9 @@ bgAudio.volume = 0.09; // Set a comfortable low volume
 bgAudio.pause(); // Ensure audio is paused initially
 
 // Ensure audio plays when page becomes visible (only if already playing)
-document.addEventListener('visibilitychange', function() {
+document.addEventListener('visibilitychange', function () {
     if (!document.hidden && !bgAudio.paused) {
-        bgAudio.play().catch(function(error) {
+        bgAudio.play().catch(function (error) {
             console.log("Audio resume failed:", error);
         });
     }

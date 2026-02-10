@@ -1,75 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemasai</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://res.cloudinary.com/dhjiftq8d/image/upload/v1698937877/WhatsApp_Image_2023-11-02_at_20.39.19_49d1c8ed_fqfvjo.jpg">
+    <link rel="icon"
+        href="https://res.cloudinary.com/dhjiftq8d/image/upload/v1698937877/WhatsApp_Image_2023-11-02_at_20.39.19_49d1c8ed_fqfvjo.jpg">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="navbar .bg-transparent">
-    <div class="navbar-left">
-        <h2 class="h2-title"><img class="icon" src="https://res.cloudinary.com/dhjiftq8d/image/upload/v1698937877/WhatsApp_Image_2023-11-02_at_20.39.19_49d1c8ed_fqfvjo.jpg" alt="my logo">HEMASAI</h2>
-    </div>
-    <div class="navbar-right">
-        <a class="a-element" href="#home">Home</a>
-        <a class="a-element" href="#s1">Skills</a>
-        <a class="a-element" href="#about">Education</a>
-        <a class="a-element" href="#p1">Contact</a> 
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn-1 btn-outline-success" type="submit">Search</button>
-        </form>
-    </div>
+    <div class="navbar bg-transparent">
+        <div class="navbar-left">
+            <img class="icon"
+                src="https://res.cloudinary.com/dhjiftq8d/image/upload/v1698937877/WhatsApp_Image_2023-11-02_at_20.39.19_49d1c8ed_fqfvjo.jpg"
+                alt="my logo">
+            <h2 class="h2-title">HEMASAI</h2>
+        </div>
+        <div class="navbar-right">
+            <a class="a-element" href="#home">Home</a>
+            <a class="a-element" href="#s1">Skills</a>
+            <a class="a-element" href="#about">Education</a>
+            <a class="a-element" href="#p1">Contact</a>
+            <a class="a-element" href="projects.html">Projects</a>
+            <a class="a-element" href="https://hema-sai.netlify.app" title="Portfolio 2.0" target="_blank">Portfolio
+                2.0</a>
+            <!-- <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn-1 btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
     </div>
     <div class="home">
         <div class="left">
-            <img src="images/profile-pic2.jpg" width="350" height="450" alt="my logo" class="profile-image">
-            <br>
-            <a href="https://github.com/director-ram" target="_blank">
-                <img src="images/github-icon.png" alt="github-icon" class="logo">
-            </a>
-            <a href="https://www.linkedin.com/in/hema-sai-8b068229b/">
-                <img src="images/linkedin-logo.png" alt="linkedin" class="linkedin">
-            </a>
+            <img src="images/profile-pic2.jpg" alt="my logo" class="profile-image">
+            <div class="social-logos">
+                <a href="https://github.com/director-ram" target="_blank">
+                    <img src="images/github-icon.png" alt="github-icon" class="logo">
+                </a>
+                <a href="https://www.linkedin.com/in/hema-sai-8b068229b/">
+                    <img src="images/linkedin-logo.png" alt="linkedin" class="logo">
+                </a>
+            </div>
         </div>
         <div class="right">
-            <h2 id="home" class="right-h2">I'M <bold style="color: red;text-decoration: underline;">HEMASAI</bold></h2>
-            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">I'm HemaSai, currently pursuing 4th year in B.E CSE at Aarupadai veedu institue of technology,
-         My interest in Web Development is for <br> Building a interactive websites and working with front-end and back-end and facing the challenges in the way and 
+            <h2 id="home" class="right-h2">I'M <bold style="color: red;">HEMASAI</bold>
+            </h2>
+            <p class="para">I'm HemaSai,
+                currently pursuing 4th year in B.E CSE at Aarupadai veedu institue of technology,
+                My interest in Web Development is <br>for Building a interactive websites and working with front-end
+                and back-end and facing the challenges in the way and
                 <br> solving the errors and bugs is the best part in web-development.
-                <br><a href="#sm" style="color: white;">check out my social media</a></p>
+                <br><a href="#sm" style="color: white;">check out my social media</a>
+            </p>
             <div class="blog-section">
                 <h2 class="blog-title">My Projects</h2>
                 <div class="blog-cards">
                     <div class="blog-card">
                         <h3 class="blog-card-title">Simple Purchase Order</h3>
-                        <p class="blog-card-desc">A streamlined purchase order management system with user authentication and order tracking capabilities.</p>
-                        <a href="https://simple-po-manager-ui.vercel.app/register" target="_blank" class="blog-card-link">Live Demo</a>
+                        <p class="blog-card-desc">A streamlined purchase order management system with user
+                            authentication and order tracking capabilities.</p>
+                        <a href="https://simple-po-manager-ui.vercel.app/register" target="_blank"
+                            class="blog-card-link">Live Demo</a>
                     </div>
                     <div class="blog-card">
                         <h3 class="blog-card-title">Prediction Pro</h3>
-                        <p class="blog-card-desc">Make price predictions, stake SOL, and compete with other traders in this cryptocurrency prediction platform.</p>
-                        <a href="https://predictionpro-crypto.netlify.app/" target="_blank" class="blog-card-link">Live Demo</a>
+                        <p class="blog-card-desc">Make price predictions, stake SOL, and compete with other traders in
+                            this cryptocurrency prediction platform.</p>
+                        <a href="https://predictionpro-crypto.netlify.app/" target="_blank" class="blog-card-link">Live
+                            Demo</a>
                     </div>
                     <div class="blog-card">
                         <h3 class="blog-card-title">HAG QR Generator</h3>
-                        <p class="blog-card-desc">Generate, scan, and manage QR codes with ease using this modern, interactive platform.</p>
+                        <p class="blog-card-desc">Generate, scan, and manage QR codes with ease using this modern,
+                            interactive platform.</p>
                         <a href="https://www.hagqrscanner.website" target="_blank" class="blog-card-link">Live Demo</a>
                     </div>
                     <div class="blog-card">
                         <h3 class="blog-card-title">AI-chat app</h3>
                         <p class="blog-card-desc">AI chat application helps introverts to over come the introvertness
-                            
+
                             and fear of communication,<br>
-                            the app is in development stage for multiple language support and TTS, it will be out soon. </p>
-                        <a  href=" " target="_blank" class="blog-card-link">Not yet live</a>
+                            the app is in development stage for multiple language support and TTS, it will be out soon.
+                        </p>
+                        <a href=" " target="_blank" class="blog-card-link">Not yet live</a>
                     </div>
                 </div>
                 <div class="view-all-projects">
-                    <button class="view-all-btn" onclick="window.open('projects.html', '_blank')">View All Projects</button>
+                    <button class="view-all-btn" onclick="window.open('projects.html', '_blank')">View All
+                        Projects</button>
                 </div>
             </div>
         </div>
@@ -77,22 +102,29 @@
 
     </div>
     <div class="box element">
-        <a href="https://www.youtube.com/playlist?list=PLWAaQ2S2wYX-jqBe6o_2GYr6pjKJgrzvx" title="youtube" target="_blank"><img src="https://res.cloudinary.com/dhjiftq8d/image/upload/v1698075051/youtube_ro8ub0.avif" width="50px" height="50px" style="left: 0%; border: 2px solid red; border-radius: 10px; float: left;margin-left: 0%;margin-top: 6px;padding-left: 0%;text-align: left;box-shadow: 1px 4px 2px red;"></a>
+        <a href="https://www.youtube.com/playlist?list=PLWAaQ2S2wYX-jqBe6o_2GYr6pjKJgrzvx" title="youtube"
+            target="_blank"><img src="https://res.cloudinary.com/dhjiftq8d/image/upload/v1698075051/youtube_ro8ub0.avif"
+                width="50px" height="50px"
+                style="left: 0%; border: 2px solid red; border-radius: 10px; float: left;margin-left: 0%;margin-top: 6px;padding-left: 0%;text-align: left;box-shadow: 1px 4px 2px red;"></a>
     </div>
     <div class="services">
-        <h1 class="ser-h1" id="s1">Skills</h1>
+        <h1 class="ser-h1">Skills</h1>
         <div class="services-sub-cont-1">
             <div class="service-card">
                 <h2 class="sc-h1">TypeScript + React.js</h2>
-                <p class="sc-p">I have developed a QR generator using React + TypeScript i have implemented it in front-end, you can check out the project in Above section.</p>
+                <p class="sc-p">I have developed a QR generator using React + TypeScript i have implemented it in
+                    front-end, you can check out the project in Above section.</p>
             </div>
             <div class="service-card">
                 <h2 class="sc-h1">HTML</h2>
-                <p class="sc-p">I have used node.js for backend in all my web-development projects<br> it is <b>JavaScript run time environment</b> it enabels javascript to work in backend too</p>
+                <p class="sc-p">I have used node.js for backend in all my web-development projects<br> it is
+                    <b>JavaScript run time environment</b> it enabels javascript to work in backend too
+                </p>
             </div>
             <div class="service-card">
                 <h2 class="sc-h1">PremierPro</h2>
-                <p class="sc-p">I have Video editing skills with premierpro<br> you can check out the video editing in my youtube channel.</p>
+                <p class="sc-p">I have Video editing skills with premierpro<br> you can check out the video editing in
+                    my youtube channel.</p>
             </div>
         </div>
     </div>
@@ -111,50 +143,66 @@
         <div class="services-sub-cont">
             <div class="service-card">
                 <img src="images/school.jpeg" alt="school " class="testimonial-img">
-                <h4>Triveni <span style=" color: red; font-family: 'Courier New', Courier, monospace;">E.M high</span> school<br><span style="color: red">2008</span> - 2020</h4>
+                <h4>Triveni <span style=" color: red; font-family: 'Courier New', Courier, monospace;">E.M high</span>
+                    school<br><span style="color: red">2008</span> - 2020</h4>
                 <p class="sc-p"><b style="color: blue;">10th - </b>percentage: <span style="color: red;">100%</span></p>
             </div>
             <div class="service-card">
                 <img src="images/narayana-college.jpg" alt="intermediate" class="testimonial-img">
-                <h4>Narayana<span style="color: red; font-family: 'Courier New', Courier, monospace;"> JR</span> college<br><span style="color: red">2020</span> - 2022</h4>
-                <p class="sc-p"><b style="color: blue;">Intermediate - </b>percantage: <span style="color: red;">89%</span></p>
+                <h4>Narayana<span style="color: red; font-family: 'Courier New', Courier, monospace;"> JR</span>
+                    college<br><span style="color: red">2020</span> - 2022</h4>
+                <p class="sc-p"><b style="color: blue;">Intermediate - </b>percantage: <span
+                        style="color: red;">89%</span></p>
             </div>
             <div class="service-card">
                 <img src="images/college.png " alt="college " class="testimonial-img">
-                <h4><span style="color: red; font-family: 'Courier New', Courier, monospace;">Aarupadai veedu </span>institute of technology<br><span style="color: red;">2022</span> - current</h4>
-                <p class="sc-p">currently pursing degree, <span style="color:red">CGPA</span> upto V sem: <span style="color: red;">7.5</span></p>
+                <h4><span style="color: red; font-family: 'Courier New', Courier, monospace;">Aarupadai veedu
+                    </span>institute of technology<br><span style="color: red;">2022</span> - current</h4>
+                <p class="sc-p">currently pursing degree, <span style="color:red">CGPA</span> upto V sem: <span
+                        style="color: red;">7.5</span></p>
             </div>
         </div>
     </div>
     <div class="contact">
         <h1 class="ser-h1" id="p1">CONTACT</h1>
         <div class="contact-info">
-                 <h2>Hema<span style="color: red;">sai</span></h2>
-                 <p><span style="color: red;">contact no:</span> +91 9391763277</p>
-                 <p><span style="color: red;">Email:</span> khemasai413@gmail.com</p>
+            <h2>Hema<span style="color: red;">Sai</span></h2>
+            <p><span style="color: red;">contact no:</span> +91 9391763277</p>
+            <p><span style="color: red;">Email:</span> khemasai413@gmail.com</p>
         </div>
         <div class="social-icons">
             <div class="social-icon">
                 <!-- <h3 class="si-h3" id="sm">Social media</h3> -->
-                <a href="https://www.instagram.com/ore_monkey_d__luffy_?utm_source=qr&igsh=eGdwdGJtcHFidGto" title="instagram" target="_blank">
-                    <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram" class="social-icon-img">
+                <a href="https://www.instagram.com/ore_monkey_d__luffy_?utm_source=qr&igsh=eGdwdGJtcHFidGto"
+                    title="instagram" target="_blank">
+                    <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png"
+                        alt="instagram" class="social-icon-img">
                 </a>
                 <a href="https://wa.me/qr/35ERXSZGYBYHN1" title="whatsapp" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="whatsapp" class="social-icon-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+                        alt="whatsapp" class="social-icon-img">
                 </a>
                 <a href="mailto:testmailofpo@gmail.com" title="email" target="_blank">
-                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="mail" class="social-icon-img">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+                        alt="mail" class="social-icon-img">
                 </a>
             </div>
         </div>
     </div>
-    <a><div class="card" href="https://www.youtube.com/playlist?list=PLWAaQ2S2wYX-jqBe6o_2GYr6pjKJgrzvx" target="_blank"><img src="images/utube_profile.jpg " class="card-img-top" alt="youtube channel"></a>
+    <a>
+        <div class="card" href="https://www.youtube.com/playlist?list=PLWAaQ2S2wYX-jqBe6o_2GYr6pjKJgrzvx"
+            target="_blank"><img src="images/utube_profile.jpg " class="card-img-top" alt="youtube channel">
+    </a>
 
-        <div class="card-body">
-          <h2 class="card-title">IT'S <span style="color: red;">sai</span></h2>
-          <p class="card-text">You can check the <a href="https://youtube.com/@itssai2004?si=xeNlNlDpNH9jGYt1" target="_blank"><img src="images/youtube-logo.png" width="25px" height="25px" class="logo-2"></a> channel here.</p>
-          <button class="btn-2"><a href="https://www.youtube.com/playlist?list=PLWAaQ2S2wYX-jqBe6o_2GYr6pjKJgrzvx" title="IT'S SAI" class="btn btn-primary" target="_blank">Go To youtube channel</a></button>
-        </div>
-      </div>
+    <div class="card-body">
+        <h2 class="card-title">IT'S <span style="color: red;">sai</span></h2>
+        <p class="card-text">You can check the <a href="https://youtube.com/@itssai2004?si=xeNlNlDpNH9jGYt1"
+                target="_blank"><img src="images/youtube-logo.png" width="25px" height="25px" class="logo-2"></a>
+            channel here.</p>
+        <button class="btn-2"><a href="https://youtube.com/@itssai2004?si=xeNlNlDpNH9jGYt1" title="IT'S SAI"
+                class="btn-link" target="_blank">Go To youtube channel</a></button>
+    </div>
+    </div>
 </body>
+
 </html>
