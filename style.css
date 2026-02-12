@@ -581,6 +581,11 @@ body {
     max-width: 800px;
 }
 
+.social-icon a {
+    text-decoration: none;
+    color: white;
+}
+
 .social-icon-img {
     height: 50px;
     padding: 10px;
@@ -679,6 +684,12 @@ body {
 .form-in:focus {
     outline: 2px solid red;
     transition: outline 0.3s ease;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px;
+    border: none;
 }
 
 /* Responsive Design */
