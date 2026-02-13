@@ -48,6 +48,15 @@ body {
     align-items: center;
 }
 
+.title-above-pic {
+    color: rgba(255, 0, 0, 0.993);
+    font-family: 'Bitcount Grid Double';
+    font-size: 4.0rem;
+    margin-bottom: 20px;
+    align-items: center;
+    text-decoration: dotted;
+}
+
 .navbar-right {
     display: flex;
     align-items: center;
